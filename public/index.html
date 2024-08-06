@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Images/logo.png">
+    <title>Food Quality Checker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #d3d3d3; /* Light gray background */
+            color: #343a40; /* Dark text */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff0000; /* Red */
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            background-color: #007bff; /* Blue */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            color: white;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3; /* Darker blue */
+        }
+        .loader {
+            border: 8px solid #f3f3f3; /* Light gray */
+            border-radius: 50%;
+            border-top: 8px solid #007bff; /* Blue */
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+            margin-top: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .evaluation {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #343a40; /* Dark */
+            border-radius: 5px;
+            background-color: #e9ecef; /* Light gray */
+            width: 100%;
+            max-width: 600px;
+            font-size: 1.25rem; /* Larger font size */
+        }
+        .evaluation-header {
+            font-weight: bold;
+            font-size: 1.5rem; /* Larger font size for headers */
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Food Quality Checker</h1>
+        <div class="mb-3">
+            <input type="file" class="form-control" id="imageUpload" accept="image/*">
+        </div>
+        <button class="btn btn-custom" onclick="extractText()">Extract Text</button>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="evaluation" class="evaluation"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
