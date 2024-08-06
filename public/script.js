@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const sendTextToBackend = (text) => {
         $.ajax({
-            url: 'https://food-quality-checker.vercel.app/api/receive-text',
+            url: 'https://food-quality-checker-m3i4rzpny-pavans-projects-34210cb0.vercel.app/api/receive-text',
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({ text: text }),
