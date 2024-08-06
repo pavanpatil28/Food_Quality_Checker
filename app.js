@@ -7,10 +7,9 @@ const port = process.env.PORT || 5000;
 
 // Configure CORS
 app.use(cors({
-    origin: 'https://food-quality-checker.vercel.app', // Allow requests from this origin
-    methods: ['GET', 'POST'], // Allow specific methods
-    allowedHeaders: ['Content-Type'] // Allow specific headers
+    origin: '*'
 }));
+
 
 // Middleware to parse JSON bodies
 app.use(express.json());
