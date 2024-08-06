@@ -1,4 +1,4 @@
-const { run } = require('./gemini');
+const { run } = require('../gemini');
 
 module.exports = async (req, res) => {
   if (req.method === 'POST') {

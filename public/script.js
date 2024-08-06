@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const sendTextToBackend = (text) => {
         $.ajax({
-            url: '/api/receive-text', // Updated URL to the Vercel serverless function
+            url: '/api/receive-text',
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({ text: text }),
