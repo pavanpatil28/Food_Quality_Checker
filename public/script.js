@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const sendTextToBackend = (text) => {
         $.ajax({
-            url: 'http://localhost:5000/api/receive-text',
+            url: 'time-complexity-tracker-svg9-74cculh4m-pavans-projects-34210cb0.vercel.app/api/receive-text',
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({ text: text }),
