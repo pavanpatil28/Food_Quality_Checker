@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #d3d3d3; /* Light gray background */
-            color: #343a40; /* Dark text */
+            background-color: #f8f9fa; /* Light gray background */
+            color: #212529; /* Dark text */
         }
         .container {
             display: flex;
@@ -21,8 +21,8 @@
             padding: 20px;
         }
         h1 {
-            color: #ff0000; /* Red */
-            font-size: 3rem;
+            color: #dc3545; /* Red */
+            font-size: 2.5rem;
             margin-bottom: 20px;
         }
         .btn-custom {
@@ -31,19 +31,20 @@
             border-radius: 5px; /* Rounded corners */
             color: white;
             margin-top: 10px;
-            padding: 10px 20px;
+            padding: 12px 24px;
             font-size: 16px;
+            transition: background-color 0.3s ease;
         }
         .btn-custom:hover {
             background-color: #0056b3; /* Darker blue */
         }
         .loader {
-            border: 8px solid #f3f3f3; /* Light gray */
+            border: 8px solid #e9ecef; /* Light gray */
             border-radius: 50%;
             border-top: 8px solid #007bff; /* Blue */
             width: 60px;
             height: 60px;
-            animation: spin 2s linear infinite;
+            animation: spin 1.5s linear infinite;
             margin-top: 20px;
         }
         @keyframes spin {
@@ -53,12 +54,13 @@
         .evaluation {
             margin-top: 20px;
             padding: 20px;
-            border: 1px solid #343a40; /* Dark */
+            border: 1px solid #ced4da; /* Light gray */
             border-radius: 5px;
-            background-color: #e9ecef; /* Light gray */
+            background-color: #ffffff; /* White */
             width: 100%;
             max-width: 600px;
             font-size: 1.25rem; /* Larger font size */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
         .evaluation-header {
             font-weight: bold;
