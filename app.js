@@ -3,7 +3,7 @@ const cors = require('cors');
 const { run } = require('./gemini');
 const path = require('path');
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Use CORS middleware
 app.use(cors());
